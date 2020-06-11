@@ -3,7 +3,7 @@ import serial
 import time
 from telebot import types
 uno = serial.Serial("COM3",19200) #номер порта и скорость работы с ним
-bot = telebot.TeleBot('904348702:AAFA68Kqi9AySdSN20wDYlAt3yhM5enndEU') #токен бота который выдал botfather
+bot = telebot.TeleBot('') #токен бота который выдал botfather
 @bot.message_handler(commands=['start']) #обработчик команды старт
 def welcome(message):
 
